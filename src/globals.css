@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {}
+
+.popup {}
+
+h1 {}
+
+h3 {}
+
+input.search {}
+
+.controlButton {}
