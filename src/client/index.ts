@@ -6,4 +6,11 @@
  * js: new Client({ guildId: '', channelId: '' }).pauseMusic()
  */
 
-class Client {}
+import SongController from "./SongController";
+import Base from "./base";
+
+class Client extends Base {
+	songController = new SongController;
+}
+
+export default Client

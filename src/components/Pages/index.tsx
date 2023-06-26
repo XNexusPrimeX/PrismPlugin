@@ -1,11 +1,12 @@
 import React from 'react';
 
 import useShortcut from '@hooks/useShortcut';
+import type Client from '@client';
 import Home from './Home';
 import NotInChannel from './NotInChannel';
 import AddBot from './AddBot';
 
-function FullPage() {
+function PageManager({ client }: { client: Client }) {
 	const toggled = useShortcut();
 
 	/**
@@ -28,7 +29,7 @@ function FullPage() {
 		return <NotInChannel />
 	}
 
-	return <Home />
+	return <Home client={client} />
 }
 
-export default FullPage
+export default PageManager
